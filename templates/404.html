@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Page Not Found{% endblock %}
+
+{% block content %}
+<div style="text-align:center; padding: 60px 0;">
+  <div style="font-size:72px; color:var(--color-border); font-family:var(--font-heading); font-weight:700; margin-bottom:16px;">404</div>
+  <h1 style="margin:0 0 12px;">Page Not Found</h1>
+  <p style="color:var(--color-text-meta); max-width:400px; margin: 0 auto 28px;">
+    The page you were looking for could not be found. It may have been moved or the URL may be incorrect.
+  </p>
+  <a href="{% url 'webapp:home' %}" class="btn btn--primary">Go to Introduction</a>
+</div>
+{% endblock %}

@@ -1,0 +1,932 @@
+/* =========================================================
+   Notebook / Chapter Content Styles
+   Applies NASA Horizon Design System to:
+     1. Quarto-generated HTML (primary path – gh-pages extraction)
+     2. nbconvert HTML (fallback path)
+
+   Quarto HTML uses Bootstrap utility classes internally.
+   We provide the minimal stubs needed so those classes work
+   without loading the full Bootstrap library.
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Chapter page layout  (chapter-layout / chapter-toc)
+   --------------------------------------------------------- */
+
+/* Widen .site-content on chapter pages to fit content + right TOC */
+.chapter-page .site-content {
+  max-width: 100%;
+}
+
+/* Flex row: main column + sticky right TOC */
+.chapter-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.chapter-main {
+  flex: 1;
+  min-width: 0;        /* allow shrinking below intrinsic width */
+  max-width: 1056px;    /* keep prose readable */
+}
+
+/* Right-side TOC panel */
+.chapter-toc {
+  width: 210px;
+  flex-shrink: 0;
+  position: sticky;
+  top: calc(var(--header-height) + 24px);
+  max-height: calc(100vh - var(--header-height) - 48px);
+  overflow-y: auto;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  line-height: 1.45;
+  /* subtle scrollbar on overflow */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.chapter-toc__heading {
+  margin: 0 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--color-text-meta);
+}
+
+.chapter-toc__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chapter-toc__item {
+  margin: 0;
+}
+
+.chapter-toc__link {
+  display: block;
+  padding: 3px 6px 3px 8px;
+  color: var(--color-text-meta);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  font-size: 12.5px;
+  line-height: 1.4;
+  transition: color 0.1s, border-color 0.1s;
+  word-break: break-word;
+}
+
+.chapter-toc__link:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.chapter-toc__link.active {
+  color: var(--color-primary);
+  border-left-color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Indent h2 sub-section entries under h1 */
+.chapter-toc__item--h2 .chapter-toc__link {
+  padding-left: 20px;
+  font-size: 12px;
+  color: var(--color-text-meta);
+}
+
+/* ── Depth-3 accordion TOC (introduction page) ── */
+
+/* Row wrapping an h2 link + its toggle button */
+.chapter-toc__row {
+  display: flex;
+  align-items: center;
+}
+.chapter-toc__row .chapter-toc__link {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Collapse toggle button (▸ / ▾) */
+.chapter-toc__toggle {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 1;
+  padding: 2px 4px;
+  color: var(--color-text-meta);
+  transition: color 0.1s;
+}
+.chapter-toc__toggle:hover {
+  color: var(--color-primary);
+}
+
+/* Nested h3 list – hidden until .is-open */
+.chapter-toc__subnav {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.chapter-toc__subnav.is-open {
+  display: block;
+}
+
+/* h3 entries indented further inside the subnav */
+.chapter-toc--depth-3 .chapter-toc__item--h3 .chapter-toc__link {
+  padding-left: 32px;
+  font-size: 11.5px;
+  color: var(--color-text-meta);
+}
+
+/* Hide TOC on narrow viewports */
+@media (max-width: 1100px) {
+  .chapter-toc { display: none; }
+  .chapter-page .site-content { max-width: 860px; }
+}
+
+
+/* ---------------------------------------------------------
+   Bootstrap utility stubs (minimal set used by Quarto HTML)
+   --------------------------------------------------------- */
+.d-flex        { display: flex !important; }
+.d-none        { display: none !important; }
+.flex-grow-1   { flex-grow: 1 !important; }
+.flex-shrink-0 { flex-shrink: 0 !important; }
+.align-items-center { align-items: center !important; }
+.text-start    { text-align: left !important; }
+.mb-0          { margin-bottom: 0 !important; }
+.mb-1          { margin-bottom: .25rem !important; }
+.mb-2          { margin-bottom: .5rem !important; }
+.mt-1          { margin-top: .25rem !important; }
+.mt-2          { margin-top: .5rem !important; }
+.ms-2          { margin-left: .5rem !important; }
+.px-1          { padding-left: .25rem !important; padding-right: .25rem !important; }
+.py-0          { padding-top: 0 !important; padding-bottom: 0 !important; }
+.pt-lg-2       { padding-top: .5rem !important; }
+
+/* img-fluid */
+.img-fluid { max-width: 100%; height: auto; }
+
+/* ratio (Bootstrap aspect-ratio helper) */
+.ratio {
+  position: relative;
+  width: 100%;
+}
+.ratio::before {
+  display: block;
+  padding-top: var(--bs-aspect-ratio);
+  content: '';
+}
+.ratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ratio-16x9 { --bs-aspect-ratio: 56.25%; }
+.ratio-4x3  { --bs-aspect-ratio: 75%; }
+
+
+/* ---------------------------------------------------------
+   Quarto author block  (quarto-title-meta-author)
+   --------------------------------------------------------- */
+.quarto-title-block {
+  margin-bottom: 28px;
+}
+
+/* Hide the h1 title inside the Quarto header block –
+   Django's chapter template already renders it */
+.quarto-title-block .quarto-title h1 {
+  display: none;
+}
+
+.quarto-title-meta-author {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 14px 18px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  margin-bottom: 24px;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+}
+
+.quarto-title-meta-heading {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--color-text-meta);
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 6px;
+}
+
+.quarto-title-meta-contents {
+  padding: 4px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.quarto-title-meta-contents:last-child,
+.quarto-title-meta-contents:nth-last-child(2) {
+  border-bottom: none;
+}
+
+.quarto-title-meta-contents .author {
+  font-family: var(--font-heading);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Higher specificity than #quarto-document-content img (101) to keep
+   ORCID icons inline inside the author grid links */
+#quarto-document-content .quarto-title-author-orcid img {
+  display: inline;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin: 0;
+  border-radius: 0;
+}
+
+.quarto-title-meta-contents .affiliation {
+  font-size: 12px;
+  color: var(--color-text-meta);
+  font-style: italic;
+  margin: 2px 0 0;
+}
+
+
+/* ---------------------------------------------------------
+   Quarto callout blocks
+   --------------------------------------------------------- */
+.callout {
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  margin: 1.25rem 0;
+  overflow: hidden;
+}
+
+/* callout-style-simple: no header bar, just a body */
+.callout-body,
+.callout-body-container {
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.callout-body.d-flex {
+  padding: 0;
+}
+.callout-body.d-flex .callout-body-container {
+  padding: 12px 16px;
+  flex: 1;
+}
+
+.callout-icon-container {
+  display: none;   /* we use no-icon style exclusively */
+}
+
+.callout-body p:last-child,
+.callout-body-container p:last-child { margin-bottom: 0; }
+
+/* Note (default – primary blue) */
+.callout-note   { border-left-color: var(--color-primary); }
+/* Warning – amber */
+.callout-warning {
+  border-left-color: #e6a817;
+  background: rgba(230, 168, 23, 0.04);
+}
+/* Tip – green */
+.callout-tip {
+  border-left-color: #1a9e5e;
+  background: rgba(26, 158, 94, 0.04);
+}
+/* Important / Caution – red */
+.callout-important,
+.callout-caution {
+  border-left-color: var(--color-hover);
+  background: rgba(246, 65, 55, 0.04);
+}
+
+/* Titled callouts (callout-style-default) */
+.callout-style-default .callout-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(1, 112, 185, 0.07);
+  border-bottom: 1px solid var(--color-border);
+}
+.callout-style-default.callout-warning .callout-header {
+  background: rgba(230, 168, 23, 0.1);
+}
+.callout-style-default.callout-tip .callout-header {
+  background: rgba(26, 158, 94, 0.1);
+}
+.callout-style-default.callout-important .callout-header,
+.callout-style-default.callout-caution .callout-header {
+  background: rgba(246, 65, 55, 0.08);
+}
+
+.callout-title {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+.callout-warning  .callout-title { color: #8a6300; }
+.callout-tip      .callout-title { color: #0e6640; }
+.callout-important .callout-title,
+.callout-caution  .callout-title { color: #c0392b; }
+
+
+/* ---------------------------------------------------------
+   Code fold / output fold  (Quarto <details> toggles)
+   --------------------------------------------------------- */
+details.code-fold,
+details.output-fold {
+  margin-bottom: 0;
+}
+
+details.code-fold > summary,
+details.output-fold > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius);
+  padding: 4px 10px;
+  margin-bottom: 4px;
+  list-style: none;
+  user-select: none;
+  transition: background 0.15s, color 0.15s;
+  color: var(--color-primary);
+  background: rgba(1, 112, 185, 0.05);
+}
+
+details.output-fold > summary {
+  border-color: var(--color-border);
+  color: var(--color-text-meta);
+  background: var(--color-bg);
+}
+
+details.code-fold > summary::-webkit-details-marker,
+details.output-fold > summary::-webkit-details-marker { display: none; }
+details.code-fold > summary::marker,
+details.output-fold > summary::marker { display: none; }
+
+details.code-fold > summary::before,
+details.output-fold > summary::before {
+  content: '▶';
+  font-size: 9px;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+details[open].code-fold > summary::before,
+details[open].output-fold > summary::before {
+  transform: rotate(90deg);
+}
+
+details.code-fold > summary:hover,
+details.output-fold > summary:hover {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+
+/* ---------------------------------------------------------
+   Quarto source code blocks
+   --------------------------------------------------------- */
+
+/* Outer scaffold with copy button */
+.code-copy-outer-scaffold {
+  position: relative;
+}
+
+.code-copy-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 3px 7px;
+  cursor: pointer;
+  font-size: 11px;
+  color: var(--color-text-meta);
+  transition: background 0.15s, color 0.15s;
+  z-index: 2;
+}
+.code-copy-button:hover {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+/* sourceCode container */
+div.sourceCode {
+  background: #f8f9fa;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow-x: auto;
+  margin: 0;
+  font-family: 'Courier New', Consolas, 'Liberation Mono', monospace;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+pre.sourceCode {
+  margin: 0;
+  padding: 10px 14px;
+  background: transparent;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+/* Numbered source */
+pre.numberSource {
+  padding-left: 3.5em;
+}
+pre.numberSource code > span {
+  position: relative;
+  left: -4em;
+  counter-increment: source-line;
+}
+pre.numberSource code > span > a:first-child::before {
+  content: counter(source-line);
+  position: relative;
+  left: -1em;
+  text-align: right;
+  vertical-align: baseline;
+  border: none;
+  display: inline-block;
+  padding: 0 4px;
+  width: 3.5em;
+  color: var(--color-text-meta);
+  background: rgba(0,0,0,0.04);
+  border-right: 1px solid var(--color-border);
+  margin-right: 6px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+pre.numberSource { margin-left: 3em; }
+
+/* Pandoc / Quarto syntax token colours (Pygments-compatible) */
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode { white-space: pre; }
+
+/* Comments */
+span.co { color: #6a737d; font-style: italic; }
+/* Keywords */
+span.kw { color: #d73a49; font-weight: bold; }
+/* Strings */
+span.st { color: #032f62; }
+/* Import / special identifiers */
+span.im { color: #005cc5; font-weight: 500; }
+/* Operators */
+span.op { color: #d73a49; }
+/* Decimal / numeric */
+span.dv { color: #005cc5; }
+span.fl { color: #005cc5; }
+/* Built-ins */
+span.bu { color: #6f42c1; }
+/* Variables */
+span.va { color: #24292e; }
+/* Control flow */
+span.cf { color: #d73a49; font-weight: bold; }
+/* Attributes */
+span.at { color: #005cc5; }
+/* Documentation string */
+span.vs { color: #032f62; }
+span.ss { color: #032f62; }
+/* Character */
+span.ch { color: #032f62; }
+/* Function names */
+span.fu { color: #6f42c1; }
+/* Preprocessor */
+span.pp { color: #d73a49; }
+/* Alert */
+span.al { color: var(--color-hover); font-weight: bold; }
+/* Special chars */
+span.sc { color: #24292e; }
+/* Underline */
+span.ul { text-decoration: underline; }
+/* Errors */
+span.er { color: var(--color-hover); font-weight: bold; }
+
+
+/* ---------------------------------------------------------
+   Quarto video embeds  (.quarto-video)
+   --------------------------------------------------------- */
+.quarto-video {
+  margin: 1.5rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: #000;
+}
+
+.quarto-video iframe {
+  display: block;
+  border: none;
+}
+
+/* For the fallback path video-embed class */
+.video-embed {
+  margin: 1.5rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.video-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* ---------------------------------------------------------
+   Section headings  (.header-section-number, .anchored)
+   --------------------------------------------------------- */
+
+/* Offset anchor-scroll so headings aren't hidden under the sticky header.
+   Quarto wraps each section in <section id="same-id"> which is the actual
+   scroll target — the rule must cover section elements too. */
+#quarto-document-content section,
+#quarto-document-content h1,
+#quarto-document-content h2,
+#quarto-document-content h3,
+#quarto-document-content h4,
+#quarto-document-content h5,
+#quarto-document-content h6 {
+  scroll-margin-top: calc(var(--header-height) + 16px);
+}
+.header-section-number {
+  color: var(--color-text-meta);
+  margin-right: 0.4em;
+  font-weight: 400;
+}
+
+/* Anchor icon on hover */
+.anchored {
+  position: relative;
+}
+.anchored .anchor-section-href {
+  display: none;
+  position: absolute;
+  left: -1.2em;
+  color: var(--color-text-meta);
+  text-decoration: none;
+  font-size: 0.85em;
+}
+.anchored:hover .anchor-section-href {
+  display: inline;
+}
+
+/* Inline code */
+code:not(.sourceCode) {
+  font-family: 'Courier New', Consolas, monospace;
+  font-size: 88%;
+  background: rgba(1,112,185,0.08);
+  color: var(--color-primary);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+
+/* ---------------------------------------------------------
+   Tables in Quarto chapters
+   --------------------------------------------------------- */
+.notebook-content table,
+#quarto-document-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 13.5px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.notebook-content th,
+#quarto-document-content th {
+  background: var(--color-dark);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.notebook-content td,
+#quarto-document-content td {
+  border-top: 1px solid var(--color-border);
+  padding: 7px 12px;
+  color: var(--color-text);
+}
+
+.notebook-content tr:nth-child(even) td,
+#quarto-document-content tr:nth-child(even) td {
+  background: rgba(1,112,185,0.03);
+}
+
+
+/* ---------------------------------------------------------
+   Images in content area
+   --------------------------------------------------------- */
+.notebook-content img,
+#quarto-document-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px auto;
+  border-radius: var(--radius);
+}
+
+/* Inline badge / logo images (img-fluid class marks small inline icons
+   such as the Colab logo, GitHub mark, DOI badge, etc.).
+   Specificity must beat the block-display rule above:
+     .notebook-content img.img-fluid  = 21  > .notebook-content img  = 11  ✓
+     #quarto-document-content img.img-fluid = 111 > #quarto-document-content img = 101 ✓ */
+.notebook-content img.img-fluid,
+#quarto-document-content img.img-fluid {
+  display: inline;
+  vertical-align: middle;
+  margin: 0 4px 0 0;
+  border-radius: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* DOI badge images – inline, not block */
+.notebook-content img[alt="DOI"],
+#quarto-document-content img[alt="DOI"] {
+  display: inline;
+  margin: 0 4px;
+  vertical-align: middle;
+  border-radius: 0;
+}
+
+
+/* ---------------------------------------------------------
+   Task list checkboxes (Quarto / GFM)
+   --------------------------------------------------------- */
+ul.task-list {
+  list-style: none;
+  padding-left: 1.2em;
+}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.5em 0.1em -1em;
+  vertical-align: middle;
+}
+
+
+/* ---------------------------------------------------------
+   nbconvert fallback styles  (jp-* classes)
+   These apply only when gh-pages HTML is unavailable.
+   --------------------------------------------------------- */
+.jp-Cell,
+.cell {
+  margin-bottom: 1.25rem;
+}
+
+.jp-Cell-inputWrapper,
+.input {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.jp-InputArea-prompt,
+.prompt.input_prompt {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: var(--color-primary);
+  padding: 8px 10px;
+  background: rgba(1,112,185,0.06);
+  border-right: 1px solid var(--color-border);
+  min-width: 64px;
+  text-align: right;
+  user-select: none;
+}
+
+.jp-InputArea-editor,
+.input_area {
+  padding: 8px 12px;
+  overflow-x: auto;
+  background: var(--color-surface);
+}
+
+.highlight, pre.highlight, div.highlight {
+  background: #f8f9fa !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: 'Courier New', Consolas, monospace;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+.jp-Cell-outputWrapper,
+.output_wrapper {
+  border-left: 3px solid var(--color-border);
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.jp-OutputArea-output,
+.output_area {
+  padding: 8px 12px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+.jp-OutputArea-output pre,
+.output_area pre {
+  font-family: 'Courier New', Consolas, monospace;
+  font-size: 13px;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.jp-OutputArea-output[data-mime-type="application/vnd.jupyter.stderr"],
+.output_stderr {
+  background: rgba(246, 65, 55, 0.06);
+  border-left-color: var(--color-hover);
+  color: #c0392b;
+}
+
+.jp-OutputArea-output img,
+.output_area img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px 0;
+  border-radius: var(--radius);
+}
+
+.jp-MarkdownCell .jp-RenderedMarkdown,
+.text_cell_render {
+  padding: 4px 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.jp-RenderedMarkdown h1, .text_cell_render h1 { font-size: 32px; }
+.jp-RenderedMarkdown h2, .text_cell_render h2 { font-size: 26px; }
+.jp-RenderedMarkdown h3, .text_cell_render h3 { font-size: 21px; }
+
+.jp-RenderedMarkdown code,
+.text_cell_render code,
+.rendered_html code {
+  font-family: 'Courier New', Consolas, monospace;
+  font-size: 88%;
+  background: rgba(1,112,185,0.08);
+  color: var(--color-primary);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.jp-RenderedHTMLCommon table,
+.rendered_html table,
+.dataframe {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 13.5px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.jp-RenderedHTMLCommon th, .rendered_html th, .dataframe th {
+  background: var(--color-dark);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.jp-RenderedHTMLCommon td, .rendered_html td, .dataframe td {
+  border-top: 1px solid var(--color-border);
+  padding: 7px 12px;
+  color: var(--color-text);
+}
+
+.jp-RenderedHTMLCommon tr:nth-child(even) td,
+.rendered_html tr:nth-child(even) td,
+.dataframe tr:nth-child(even) td {
+  background: rgba(1,112,185,0.03);
+}
+
+.jp-RawCell { display: none; }
+
+.jp-InputPrompt,
+.jp-OutputPrompt {
+  font-family: monospace;
+  font-size: 11px;
+  color: var(--color-text-meta);
+  min-width: 50px;
+  padding: 8px 6px;
+  text-align: right;
+}
+
+/* Fallback author block (nbconvert path) */
+.chapter-authors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  margin-bottom: 28px;
+  padding: 14px 18px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+}
+
+.chapter-author {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  width: 100%;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.chapter-author:last-child { border-bottom: none; padding-bottom: 0; }
+
+.chapter-author__name {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.chapter-author__orcid {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--color-text-meta);
+  text-decoration: none;
+  gap: 3px;
+}
+.chapter-author__orcid:hover { color: var(--color-primary); text-decoration: underline; }
+
+.chapter-author__affil {
+  font-size: 12px;
+  color: var(--color-text-meta);
+  font-style: italic;
+  margin-left: auto;
+}

@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(conda run:*)",
+      "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path ''C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\ EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\webapp\\\\management\\\\commands''\")",
+      "Bash(powershell -Command:*)",
+      "Bash(curl:*)",
+      "Bash(python manage.py shell:*)",
+      "Bash(python manage.py convert_notebooks:*)",
+      "WebFetch(domain:nasa-earthrise.github.io)",
+      "Bash(python:*)",
+      "Bash(git ls-tree:*)",
+      "WebSearch",
+      "Bash(cd:*)",
+      "Bash(tree:*)",
+      "WebFetch(domain:127.0.0.1)",
+      "Bash(del \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\check_imports.py\")"
+    ]
+  }
+}

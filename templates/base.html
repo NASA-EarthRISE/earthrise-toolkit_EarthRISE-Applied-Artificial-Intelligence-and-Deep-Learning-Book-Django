@@ -1,0 +1,731 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Applied Artificial Intelligence and Deep Learning Book{% endblock %} — EarthRISE</title>
+  <meta name="description" content="A practitioner's guide to applied deep learning for Earth observation, covering semantic segmentation, time series, and foundation models.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+
+  <!-- Google Fonts: Inter + Public Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- NASA Horizon Design System -->
+  <link rel="stylesheet" href="{% static 'css/horizon.css' %}">
+
+  {% block extra_css %}{% endblock %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FSHTGR1D98"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FSHTGR1D98');
+</script>
+</head>
+<body class="{% block body_class %}{% endblock %}">
+
+<div class="site-wrapper">
+
+  <!-- ── Header ── -->
+  <header class="site-header" role="banner">
+    <button
+      class="sidebar-toggle"
+      id="sidebarToggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="siteSidebar"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="{% url 'webapp:home' %}" class="site-header__logo">
+      <img src="{% static 'images/nasa-logo.svg' %}" alt="EarthRISE" width="60" height="50.58">
+      <span class="site-header__title">Applied Artificial Intelligence and Deep Learning Book — EarthRISE</span>
+    </a>
+
+    <nav class="site-header__actions" aria-label="External links">
+      <a href="https://github.com/NASA-EarthRISE/EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book"
+         target="_blank" rel="noopener noreferrer">
+        <!-- GitHub icon -->
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+            -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2
+            -3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
+            .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08
+            2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
+            1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        Source
+      </a>
+      <a href="https://doi.org/10.5281/zenodo.20547797" target="_blank" rel="noopener noreferrer">
+        DOI
+      </a>
+    </nav>
+  </header>
+
+  <!-- ── Mobile overlay ── -->
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+  <div class="site-body">
+
+    <!-- ── Sidebar ── -->
+    <nav class="site-sidebar" id="siteSidebar" aria-label="Book chapters">
+
+      <!-- Introduction link -->
+      {% if nav_intro %}
+      <a href="{% url 'webapp:home' %}"
+         class="sidebar-link sidebar-link--intro sidebar-link--standalone{% if request.resolver_match.url_name == 'home' %} active{% endif %}">
+        Introduction
+      </a>
+      {% endif %}
+
+      <!-- Ordered nav items: standalone chapters interleaved with part groups -->
+      {% for item in nav_items %}
+
+        {% if item.type == 'chapter' %}
+          <a href="{{ item.obj.get_absolute_url }}"
+             class="sidebar-link sidebar-link--standalone{% if request.resolver_match.kwargs.slug == item.obj.slug %} active{% endif %}">
+            {{ item.obj.title }}
+          </a>
+
+        {% elif item.type == 'part' %}
+          <div class="sidebar-section">
+            <span
+              class="sidebar-section__label"
+              data-slug="{{ item.obj.slug }}"
+              role="button"
+              tabindex="0"
+              aria-controls="sidebar-part-{{ item.obj.slug }}"
+            >{{ item.obj.title }}</span>
+            <ul class="sidebar-section__chapters" id="sidebar-part-{{ item.obj.slug }}">
+              {% for ch in item.obj.chapters.all %}
+              <li>
+                <a href="{{ ch.get_absolute_url }}"
+                   class="sidebar-link{% if request.resolver_match.kwargs.slug == ch.slug %} active{% endif %}">
+                  {{ ch.title }}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+
+      {% endfor %}
+
+    </nav>
+
+    <!-- ── Main content ── -->
+    <main class="site-content" id="main-content" tabindex="-1">
+      {% block content %}{% endblock %}
+    </main>
+
+  </div><!-- /.site-body -->
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
+      &nbsp;·&nbsp;
+      <a href="https://doi.org/10.5281/zenodo.20547797" target="_blank" rel="noopener">DOI 10.5281/zenodo.20547797</a>
+      &nbsp;·&nbsp;
+      NASA EarthRISE · 2026
+    </p>
+  </footer>
+
+</div><!-- /.site-wrapper -->
+
+<!-- Sidebar JS -->
+<script src="{% static 'js/sidebar.js' %}"></script>
+{% block extra_js %}{% endblock %}
+
+<!-- ══════════════════════════════════════════════
+     CHAT WIDGET
+══════════════════════════════════════════════ -->
+{% load static %}
+<style>
+    /* ── Chat variables — all mapped to Horizon tokens ── */
+    :root {
+        --chat-primary:  var(--color-primary);    /* #0170B9 — bubbles, accents, links */
+        --chat-dark:     var(--color-dark);        /* #2e2e32 — header, FAB, send button */
+        --chat-hover:    var(--color-hover);       /* #f64137 — button hover */
+        --chat-border:   var(--color-border);      /* #dddddd */
+        --chat-txt:      var(--color-text);        /* #3a3a3a */
+        --chat-txt-meta: var(--color-text-meta);   /* #58585b */
+        --chat-bg:       var(--color-bg);          /* #F5F5F5 */
+        --chat-surface:  var(--color-surface);     /* #FFFFFF */
+        --chat-focus:    var(--color-focus);       /* #444447 */
+    }
+
+    /* ── FAB ── */
+    .chat-fab {
+        position: fixed;
+        bottom: 1.5rem;
+        right: 4rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--color-primary);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
+        transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+    }
+
+    .chat-fab:hover {
+        background: #f64137;
+        transform: scale(1.07);
+        box-shadow: 0 6px 22px rgba(0, 0, 0, 0.32);
+    }
+
+    .chat-fab svg {
+        display: block;
+        pointer-events: none;
+    }
+
+    /* ── Chat window ── */
+    .chat-window {
+        position: fixed;
+        bottom: 5.5rem;
+        right: 1.5rem;
+        z-index: 199;
+        display: flex;
+        flex-direction: column;
+        background: var(--chat-surface);
+        border: 1px solid var(--chat-border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-menu);
+        overflow: hidden;
+        width: 360px;
+        height: 480px;
+        transition: width .2s ease, height .2s ease, top .2s ease,
+                    left .2s ease, bottom .2s ease, right .2s ease;
+    }
+    .chat-window.hidden                  { display: none !important; }
+    .chat-window[data-size="medium"]     { width: 520px; height: 640px; }
+    .chat-window[data-size="fullscreen"] {
+        top: 60px; bottom: 8px; left: 8px; right: 8px;
+        width: auto; height: auto; border-radius: var(--radius);
+    }
+
+    /* ── Header — Horizon modal header spec ── */
+    .chat-hdr {
+        display: flex; align-items: center;
+        padding: .6rem .85rem;
+        background: var(--chat-dark);
+        color: #fff; flex-shrink: 0; gap: .5rem; user-select: none;
+    }
+    .chat-hdr-info  { flex: 1; min-width: 0; }
+    .chat-hdr-title {
+        font-family: var(--font-heading);
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        display: block;
+    }
+    .chat-hdr-sub   { font-size: .68rem; color: rgba(255,255,255,.55); display: block; }
+    .chat-hdr-btns  { display: flex; gap: .2rem; flex-shrink: 0; }
+    .chat-hbtn {
+        background: none; border: none; color: rgba(255,255,255,.78);
+        cursor: pointer; padding: .28rem; border-radius: var(--radius);
+        display: flex; align-items: center; justify-content: center;
+        transition: background .12s, color .12s; line-height: 1;
+    }
+    .chat-hbtn:hover { background: rgba(255,255,255,.15); color: #fff; }
+    .chat-hbtn svg   { display: block; }
+
+    /* ── Messages ── */
+    .chat-msgs {
+        flex: 1; overflow-y: auto;
+        padding: .85rem;
+        display: flex; flex-direction: column; gap: .6rem;
+        background: var(--chat-bg);
+    }
+    .chat-welcome {
+        text-align: center; color: var(--chat-txt-meta);
+        font-size: .8rem; padding: 1rem .5rem .5rem; line-height: 1.55;
+    }
+    .chat-welcome strong { color: var(--chat-primary); display: block; margin-bottom: .3rem; }
+    .chat-msg {
+        max-width: 86%; padding: .58rem .82rem; border-radius: var(--radius);
+        font-size: .845rem; line-height: 1.55; word-break: break-word;
+    }
+    .chat-msg.user {
+        align-self: flex-end; background: var(--chat-primary);
+        color: #fff; border-bottom-right-radius: 0; white-space: pre-wrap;
+    }
+    .chat-msg.assistant {
+        align-self: flex-start; background: var(--chat-surface);
+        border: 1px solid var(--chat-border); color: var(--chat-txt);
+        border-bottom-left-radius: 0; position: relative;
+    }
+    .chat-msg.assistant p               { margin: 0 0 .5rem; }
+    .chat-msg.assistant p:last-child    { margin-bottom: 0; }
+    .chat-msg.assistant ul,
+    .chat-msg.assistant ol              { margin: .25rem 0 .5rem 1.2rem; }
+    .chat-msg.assistant li              { margin-bottom: .2rem; }
+    .chat-msg.assistant h3,
+    .chat-msg.assistant h4              { color: var(--chat-primary); margin: .6rem 0 .3rem; }
+    .chat-msg.assistant h3              { font-size: .92rem; }
+    .chat-msg.assistant h4              { font-size: .85rem; }
+    .chat-msg.assistant strong          { color: var(--chat-primary); }
+    .chat-msg.assistant code {
+        background: var(--chat-bg); padding: .1em .35em;
+        border-radius: var(--radius); font-size: .82em;
+        font-family: 'Consolas','Courier New',monospace;
+    }
+    .chat-msg.assistant pre {
+        background: var(--color-dark); border-radius: var(--radius);
+        padding: .75rem; margin: .4rem 0; overflow-x: auto;
+    }
+    .chat-msg.assistant pre code { background: none; color: #fff; padding: 0; font-size: .8em; }
+    .chat-msg.assistant.streaming::after {
+        content: '▍'; display: inline-block; color: var(--chat-primary);
+        animation: chat-blink .75s step-end infinite; margin-left: 1px;
+    }
+    @keyframes chat-blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    .chat-sys-msg {
+        align-self: center; font-size: .72rem; color: var(--chat-txt-meta);
+        background: rgba(0,0,0,.04); border-radius: var(--radius);
+        padding: .25rem .65rem; max-width: 90%; text-align: center;
+    }
+
+    /* ── Copy button ── */
+    .chat-copy-btn {
+        position: absolute; top: .35rem; right: .35rem;
+        background: var(--chat-surface); border: 1px solid var(--chat-border);
+        border-radius: var(--radius); padding: .15rem .4rem;
+        cursor: pointer; color: var(--chat-txt-meta);
+        font-size: .68rem; font-family: inherit;
+        opacity: 0; transition: opacity .15s, background .12s, color .12s, border-color .12s;
+        display: flex; align-items: center; gap: .25rem;
+        white-space: nowrap; line-height: 1.4; z-index: 1;
+    }
+    .chat-msg.assistant:hover .chat-copy-btn { opacity: 1; }
+    .chat-copy-btn:hover  { background: var(--chat-bg); color: var(--chat-txt); border-color: var(--chat-border); }
+    .chat-copy-btn.copied { opacity: 1; color: var(--chat-primary); border-color: var(--chat-primary); background: rgba(1,112,185,.08); }
+    .chat-copy-btn svg { flex-shrink: 0; display: block; }
+
+    /* ── Input area ── */
+    .chat-input-row {
+        display: flex; gap: .5rem; padding: .55rem .65rem;
+        border-top: 1px solid var(--chat-border);
+        background: var(--chat-surface); flex-shrink: 0; align-items: flex-end;
+    }
+    #chatInput {
+        flex: 1; border: 1px solid var(--chat-border);
+        border-radius: var(--radius); padding: .48rem .72rem;
+        font-size: .845rem; font-family: inherit; resize: none;
+        outline: none; line-height: 1.45; max-height: 100px; min-height: 36px;
+        color: var(--chat-txt); background: var(--chat-bg);
+        transition: border-color .15s, background .15s;
+    }
+    #chatInput:focus {
+        background: var(--chat-surface);
+        border-color: var(--chat-focus);
+        outline: 1px dotted var(--chat-focus);
+    }
+    #chatSend {
+        background: var(--color-primary);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 0 0.9rem;
+        font-size: 0.82rem;
+        font-weight: 600;
+        cursor: pointer;
+        flex-shrink: 0;
+        height: 36px;
+        transition: background 0.15s;
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+    }
+
+    #chatSend:hover:not(:disabled) {
+        background: #f64137;
+    }
+
+    #chatSend:disabled {
+        background: #a0aec0;
+        cursor: not-allowed;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 520px) {
+        .chat-fab    { right: .75rem; bottom: .75rem; }
+        .chat-window {
+            left: 0; right: 0; bottom: 0; width: 100%;
+            height: 72vh; max-height: 100vh;
+            border-radius: var(--radius) var(--radius) 0 0; border-bottom: none; top: auto;
+        }
+        .chat-window[data-size="medium"] { width: 100%; height: 72vh; }
+        .chat-window[data-size="fullscreen"] {
+            top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border-radius: 0;
+        }
+        body:has(.chat-window:not(.hidden)) .chat-fab { display: none; }
+    }
+</style>
+
+<!-- FAB -->
+<button class="chat-fab" id="chatFab" aria-label="Open Book Assistant" title="Ask the Book Assistant">
+    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+</button>
+
+<!-- Chat window -->
+<div class="chat-window hidden" id="chatWindow" data-size="small">
+
+    <!-- Header -->
+    <div class="chat-hdr">
+        <div class="chat-hdr-info">
+            <span class="chat-hdr-title">Book Assistant</span>
+            <span class="chat-hdr-sub">EarthRISE AI &amp; Deep Learning Book Q&amp;A</span>
+        </div>
+        <div class="chat-hdr-btns">
+            <button class="chat-hbtn" id="chatExpandBtn" title="Expand">
+                <svg id="chatExpandIcon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                </svg>
+            </button>
+            <button class="chat-hbtn" id="chatFsBtn" title="Fullscreen">
+                <svg id="chatFsIcon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                </svg>
+            </button>
+            <button class="chat-hbtn" id="chatNewBtn" title="New chat">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                </svg>
+            </button>
+            <button class="chat-hbtn" id="chatCloseBtn" title="Close">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-msgs" id="chatMsgs">
+        <div class="chat-welcome">
+            <strong>Ask me anything about the book</strong>
+            I can answer questions about deep learning concepts, code, datasets,
+            environment setup, and Earth observation methods covered in the book.
+        </div>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input-row">
+        <textarea id="chatInput" placeholder="Ask about the book…" rows="1"></textarea>
+        <button id="chatSend">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            Send
+        </button>
+    </div>
+</div>
+
+<script>
+(function () {
+    'use strict';
+
+    const STREAM_URL = "{% url 'webapp:api_message_stream' %}";
+    const CLEAR_URL  = "{% url 'webapp:api_clear_chat' %}";
+
+    const fab       = document.getElementById('chatFab');
+    const win       = document.getElementById('chatWindow');
+    const msgsList  = document.getElementById('chatMsgs');
+    const input     = document.getElementById('chatInput');
+    const sendBtn   = document.getElementById('chatSend');
+    const closeBtn  = document.getElementById('chatCloseBtn');
+    const expandBtn = document.getElementById('chatExpandBtn');
+    const expandIco = document.getElementById('chatExpandIcon');
+    const fsBtn     = document.getElementById('chatFsBtn');
+    const fsIco     = document.getElementById('chatFsIcon');
+    const newChatBtn = document.getElementById('chatNewBtn');
+
+    const SIZES   = ['small', 'medium'];
+    const SS_KEY  = 'earthriseChatState';
+    let sizeIdx   = 0;
+    let fullscreen = false;
+    let streaming  = false;
+    let messages   = [];
+
+    const ICON_EXPAND    = '<path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>';
+    const ICON_COMPRESS  = '<path d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"/>';
+    const ICON_FS_ENTER  = '<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>';
+    const ICON_FS_EXIT   = '<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/>';
+
+    // ── sessionStorage ──────────────────────────────────────────────────
+    function saveState() {
+        try {
+            sessionStorage.setItem(SS_KEY, JSON.stringify({
+                messages,
+                open: !win.classList.contains('hidden'),
+                sizeIdx,
+            }));
+        } catch (_) {}
+    }
+
+    function loadState() {
+        try {
+            const saved = JSON.parse(sessionStorage.getItem(SS_KEY) || 'null');
+            if (!saved) return;
+            messages = Array.isArray(saved.messages) ? saved.messages : [];
+            sizeIdx  = typeof saved.sizeIdx === 'number' ? saved.sizeIdx : 0;
+            if (saved.open) win.classList.remove('hidden');
+            if (messages.length > 0) {
+                const welcome = msgsList.querySelector('.chat-welcome');
+                if (welcome) welcome.remove();
+                messages.forEach(m => renderMsg(m.role, m.content));
+                scrollBottom();
+            }
+        } catch (_) {}
+    }
+
+    // ── Size / fullscreen ───────────────────────────────────────────────
+    function applySize() {
+        win.setAttribute('data-size', fullscreen ? 'fullscreen' : SIZES[sizeIdx]);
+        expandIco.innerHTML = (sizeIdx === 0 && !fullscreen) ? ICON_EXPAND : ICON_COMPRESS;
+        expandBtn.style.visibility = fullscreen ? 'hidden' : 'visible';
+        fsIco.innerHTML = fullscreen ? ICON_FS_EXIT : ICON_FS_ENTER;
+        input.placeholder = (sizeIdx === 0 && !fullscreen)
+            ? 'Ask about the book\u2026'
+            : 'Ask about the book\u2026 (Enter to send)';
+    }
+
+    fab.addEventListener('click', () => {
+        win.classList.toggle('hidden');
+        if (!win.classList.contains('hidden')) { input.focus(); scrollBottom(); }
+        saveState();
+    });
+    closeBtn.addEventListener('click', () => { win.classList.add('hidden'); saveState(); });
+
+    newChatBtn.addEventListener('click', () => {
+        messages = [];
+        sessionStorage.removeItem(SS_KEY);
+        msgsList.innerHTML = '';
+        const w = document.createElement('div');
+        w.className = 'chat-welcome';
+        w.innerHTML = '<strong>Ask me anything about the book</strong> I can answer questions about deep learning, code, datasets, environment setup, and Earth observation methods.';
+        msgsList.appendChild(w);
+        fetch(CLEAR_URL, { method: 'POST' }).catch(() => {});
+    });
+
+    expandBtn.addEventListener('click', () => {
+        if (fullscreen) return;
+        sizeIdx = (sizeIdx + 1) % SIZES.length;
+        applySize(); saveState();
+    });
+    fsBtn.addEventListener('click', () => { fullscreen = !fullscreen; applySize(); });
+
+    // ── Auto-grow textarea ──────────────────────────────────────────────
+    input.addEventListener('input', () => {
+        input.style.height = 'auto';
+        input.style.height = Math.min(input.scrollHeight, 100) + 'px';
+    });
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+    });
+    sendBtn.addEventListener('click', sendMessage);
+
+    // ── Copy button (event delegation) ─────────────────────────────────
+    msgsList.addEventListener('click', (e) => {
+        const btn = e.target.closest('.chat-copy-btn');
+        if (!btn) return;
+        const msgDiv = btn.closest('[data-raw]');
+        if (!msgDiv) return;
+        const text = msgDiv.dataset.raw || '';
+        const lbl  = btn.querySelector('.chat-copy-lbl');
+        const onCopied = () => {
+            btn.classList.add('copied'); lbl.textContent = 'Copied!';
+            setTimeout(() => { btn.classList.remove('copied'); lbl.textContent = 'Copy'; }, 1800);
+        };
+        const fallback = () => {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            Object.assign(ta.style, {position:'fixed', opacity:'0', top:'0', left:'0'});
+            document.body.appendChild(ta); ta.select();
+            try { document.execCommand('copy'); } catch (_) {}
+            document.body.removeChild(ta); onCopied();
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(onCopied).catch(fallback);
+        } else { fallback(); }
+    });
+
+    // ── Render helpers ──────────────────────────────────────────────────
+    function scrollBottom() { msgsList.scrollTop = msgsList.scrollHeight; }
+
+    function copyBtnHtml() {
+        return '<button class="chat-copy-btn" title="Copy to clipboard">' +
+            '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"' +
+            ' stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+            '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>' +
+            '<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>' +
+            '</svg><span class="chat-copy-lbl">Copy</span></button>';
+    }
+
+    function renderMsg(role, content) {
+        if (role === 'user') {
+            const d = document.createElement('div');
+            d.className = 'chat-msg user';
+            d.innerHTML = esc(content);
+            msgsList.appendChild(d);
+        } else if (role === 'assistant') {
+            const d = document.createElement('div');
+            d.className = 'chat-msg assistant';
+            d.dataset.raw = content;
+            d.innerHTML = mdToHtml(content) + copyBtnHtml();
+            msgsList.appendChild(d);
+        } else if (role === 'sys') {
+            const d = document.createElement('div');
+            d.className = 'chat-sys-msg';
+            d.textContent = content;
+            msgsList.appendChild(d);
+        }
+        scrollBottom();
+    }
+
+    // ── Send ────────────────────────────────────────────────────────────
+    function sendMessage() {
+        const text = input.value.trim();
+        if (!text || streaming) return;
+        input.value = '';
+        input.style.height = 'auto';
+
+        const welcome = msgsList.querySelector('.chat-welcome');
+        if (welcome) welcome.remove();
+
+        messages.push({role: 'user', content: text});
+        renderMsg('user', text);
+        saveState();
+
+        const assistantDiv = document.createElement('div');
+        assistantDiv.className = 'chat-msg assistant streaming';
+        msgsList.appendChild(assistantDiv);
+        scrollBottom();
+
+        streaming = true;
+        sendBtn.disabled = true;
+
+        let raw  = '';
+        let done = false;
+
+        const source = new EventSource(STREAM_URL + '?message=' + encodeURIComponent(text));
+
+        source.onmessage = (e) => {
+            try {
+                const data = JSON.parse(e.data);
+                if (data.delta) {
+                    raw += data.delta;
+                    assistantDiv.innerHTML = mdToHtml(raw);
+                    scrollBottom();
+                }
+            } catch (_) {}
+        };
+
+        source.addEventListener('done', () => {
+            done = true;
+            source.close();
+            finalise(raw);
+        });
+
+        source.onerror = () => {
+            if (done) return;
+            source.close();
+            if (!raw) {
+                assistantDiv.classList.remove('streaming');
+                assistantDiv.innerHTML = '<em style="color:#c0392b">Something went wrong. Please try again.</em>';
+                finish();
+            } else {
+                finalise(raw);
+            }
+        };
+
+        function finalise(content) {
+            assistantDiv.classList.remove('streaming');
+            assistantDiv.dataset.raw = content;
+            assistantDiv.innerHTML = mdToHtml(content) + copyBtnHtml();
+            messages.push({role: 'assistant', content});
+            saveState();
+            finish();
+        }
+
+        function finish() {
+            streaming = false;
+            sendBtn.disabled = false;
+            input.focus();
+            scrollBottom();
+        }
+    }
+
+    // ── HTML escaping ───────────────────────────────────────────────────
+    function esc(str) {
+        return str
+            .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+            .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    // ── Markdown → HTML ─────────────────────────────────────────────────
+    function mdToHtml(text) {
+        if (!text) return '';
+        let s = esc(text);
+        s = s.replace(/```(?:\w+)?\n?([\s\S]*?)```/g, (_, code) =>
+            `<pre><code>${code.trimEnd()}</code></pre>`);
+        s = s.replace(/`([^`\n]+)`/g, '<code>$1</code>');
+        s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        s = s.replace(/__(.+?)__/g, '<strong>$1</strong>');
+        s = s.replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
+        const blocks = s.split(/\n{2,}/);
+        s = blocks.map(block => {
+            const lines = block.split('\n');
+            if (/^### /.test(block)) return `<h4>${block.replace(/^### /,'')}</h4>`;
+            if (/^## /  .test(block)) return `<h3>${block.replace(/^## /,  '')}</h3>`;
+            if (/^# /   .test(block)) return `<h3>${block.replace(/^# /,   '')}</h3>`;
+            if (lines.some(l => /^[-*+] /.test(l))) {
+                const items = lines.filter(l => /^[-*+] /.test(l))
+                    .map(l => `<li>${l.replace(/^[-*+] /,'')}</li>`).join('');
+                return `<ul>${items}</ul>`;
+            }
+            if (lines.some(l => /^\d+\. /.test(l))) {
+                const items = lines.filter(l => /^\d+\. /.test(l))
+                    .map(l => `<li>${l.replace(/^\d+\. /,'')}</li>`).join('');
+                return `<ol>${items}</ol>`;
+            }
+            if (block.startsWith('<pre>')) return block;
+            return `<p>${lines.join('<br>')}</p>`;
+        }).join('');
+        return s;
+    }
+
+    // ── Init ────────────────────────────────────────────────────────────
+    loadState();
+    applySize();
+})();
+</script>
+
+</body>
+</html>

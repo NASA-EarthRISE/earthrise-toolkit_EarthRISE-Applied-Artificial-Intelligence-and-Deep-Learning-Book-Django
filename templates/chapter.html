@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ chapter.title }}{% endblock %}
+
+{% block body_class %}chapter-page{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/notebook.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="chapter-layout">
+
+  <!-- ── Main column ── -->
+  <div class="chapter-main">
+
+    <!-- ── Chapter header ── -->
+    <div class="chapter-header">
+      {% if chapter.part %}
+      <div class="chapter-header__part">{{ chapter.part.title }}</div>
+      {% endif %}
+
+      <h1 class="chapter-header__title">{{ chapter.title }}</h1>
+    </div>
+
+    <!-- ── Chapter content ── -->
+    <div class="notebook-content">
+      {% if chapter.html_content %}
+        {{ chapter.html_content|safe }}
+      {% else %}
+        <div class="card card--accent" style="padding:20px;">
+          <p style="margin:0; color: var(--color-text-meta);">
+            Content not yet rendered. Run
+            <code>python manage.py convert_notebooks</code>
+            to generate HTML from the source notebook.
+          </p>
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- ── Prev / Next navigation ── -->
+    {% with prev=chapter.prev_chapter next=chapter.next_chapter %}
+    {% if prev or next %}
+    <nav class="chapter-nav" aria-label="Chapter navigation">
+      {% if prev %}
+      <a href="{{ prev.get_absolute_url }}" class="chapter-nav__item chapter-nav__item--prev">
+        <span class="chapter-nav__label">← Previous</span>
+        <span class="chapter-nav__title">{{ prev.title }}</span>
+      </a>
+      {% else %}
+      <div></div>
+      {% endif %}
+
+      {% if next %}
+      <a href="{{ next.get_absolute_url }}" class="chapter-nav__item chapter-nav__item--next">
+        <span class="chapter-nav__label">Next →</span>
+        <span class="chapter-nav__title">{{ next.title }}</span>
+      </a>
+      {% endif %}
+    </nav>
+    {% endif %}
+    {% endwith %}
+
+  </div><!-- /.chapter-main -->
+
+  <!-- ── Right TOC ── -->
+  <nav class="chapter-toc" id="chapterToc"
+       data-toc-depth="3"
+       aria-label="Table of contents">
+    <p class="chapter-toc__heading">Table of contents</p>
+    <ul class="chapter-toc__list" id="chapterTocList"></ul>
+  </nav>
+
+</div><!-- /.chapter-layout -->
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/chapter-toc.js' %}"></script>
+{% endblock %}
