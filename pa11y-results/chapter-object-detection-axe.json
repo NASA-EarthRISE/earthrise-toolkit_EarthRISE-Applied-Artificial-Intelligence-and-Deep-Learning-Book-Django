@@ -1,0 +1,57 @@
+{
+  "page": "chapter-object-detection",
+  "url": "/chapter/object-detection/",
+  "fullUrl": "http://127.0.0.1:8080/chapter/object-detection/",
+  "runner": "axe",
+  "documentTitle": "5. Object Detection — EarthRISE",
+  "issues": [
+    {
+      "code": "landmark-main-is-top-level",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Main landmark should not be contained in another landmark (https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=axeAPI)",
+      "context": "<main class=\"content\" id=\"quarto-document-content\">\n<header class=\"quarto-title-bl...</main>",
+      "selector": "#quarto-document-content",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the main landmark is at top level",
+        "impact": "moderate",
+        "needsFurtherReview": false,
+        "help": "Main landmark should not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=axeAPI"
+      }
+    },
+    {
+      "code": "landmark-no-duplicate-main",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Document should not have more than one main landmark (https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=axeAPI)",
+      "context": "<main class=\"site-content\" id=\"main-content\" tabindex=\"-1\">\n      \n\n<div class=\"chapter-la...</main>",
+      "selector": "#main-content",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the document has at most one main landmark",
+        "impact": "moderate",
+        "needsFurtherReview": false,
+        "help": "Document should not have more than one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=axeAPI"
+      }
+    },
+    {
+      "code": "landmark-unique",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination (https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=axeAPI)",
+      "context": "<main class=\"site-content\" id=\"main-content\" tabindex=\"-1\">\n      \n\n<div class=\"chapter-la...</main>",
+      "selector": "#main-content",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure landmarks are unique",
+        "impact": "moderate",
+        "needsFurtherReview": false,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=axeAPI"
+      }
+    }
+  ]
+}

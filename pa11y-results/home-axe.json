@@ -1,0 +1,393 @@
+{
+  "page": "home",
+  "url": "/",
+  "fullUrl": "http://127.0.0.1:8080/",
+  "runner": "axe",
+  "documentTitle": "Introduction — EarthRISE",
+  "issues": [
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternative text (https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI)",
+      "context": "<img src=\"https://orcid.org/sites/default/files/images/orcid_16x16.png\" style=\"vertical-align:middle\">",
+      "selector": "#introduction > p:nth-child(4) > a:nth-child(2) > img",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "impact": "critical",
+        "needsFurtherReview": false,
+        "help": "Images must have alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternative text (https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI)",
+      "context": "<img src=\"https://orcid.org/sites/default/files/images/orcid_16x16.png\" style=\"vertical-align:middle\">",
+      "selector": "#introduction > p:nth-child(4) > a:nth-child(5) > img",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "impact": "critical",
+        "needsFurtherReview": false,
+        "help": "Images must have alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternative text (https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI)",
+      "context": "<img src=\"https://orcid.org/sites/default/files/images/orcid_16x16.png\" style=\"vertical-align:middle\">",
+      "selector": "#introduction > p:nth-child(4) > a:nth-child(8) > img",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "impact": "critical",
+        "needsFurtherReview": false,
+        "help": "Images must have alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternative text (https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI)",
+      "context": "<img src=\"https://nasa-earthrise.github.io/EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book/Images/Tim_img_410_410.png\" width=\"200\">",
+      "selector": "#about-the-editors > p:nth-child(2) > img",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "impact": "critical",
+        "needsFurtherReview": false,
+        "help": "Images must have alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternative text (https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI)",
+      "context": "<img src=\"https://orcid.org/sites/default/files/images/orcid_16x16.png\">",
+      "selector": "#about-the-editors > p:nth-child(3) > a > img",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "impact": "critical",
+        "needsFurtherReview": false,
+        "help": "Images must have alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternative text (https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI)",
+      "context": "<img src=\"https://nasa-earthrise.github.io/EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book/Images/Biplov_img_410_410.png\" width=\"200\">",
+      "selector": "#about-the-editors > p:nth-child(5) > img",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "impact": "critical",
+        "needsFurtherReview": false,
+        "help": "Images must have alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternative text (https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI)",
+      "context": "<img src=\"https://orcid.org/sites/default/files/images/orcid_16x16.png\">",
+      "selector": "#about-the-editors > p:nth-child(6) > a > img",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "impact": "critical",
+        "needsFurtherReview": false,
+        "help": "Images must have alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternative text (https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI)",
+      "context": "<img src=\"https://nasa-earthrise.github.io/EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book/Images/David_img_400_410.png\" width=\"200\">",
+      "selector": "#about-the-editors > p:nth-child(8) > img",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "impact": "critical",
+        "needsFurtherReview": false,
+        "help": "Images must have alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternative text (https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI)",
+      "context": "<img src=\"https://orcid.org/sites/default/files/images/orcid_16x16.png\">",
+      "selector": "#about-the-editors > p:nth-child(9) > a > img",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "impact": "critical",
+        "needsFurtherReview": false,
+        "help": "Images must have alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "landmark-main-is-top-level",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Main landmark should not be contained in another landmark (https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=axeAPI)",
+      "context": "<main class=\"content\" id=\"quarto-document-content\">\n<header class=\"quarto-title-bl...</main>",
+      "selector": "#quarto-document-content",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the main landmark is at top level",
+        "impact": "moderate",
+        "needsFurtherReview": false,
+        "help": "Main landmark should not be contained in another landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-main-is-top-level?application=axeAPI"
+      }
+    },
+    {
+      "code": "landmark-no-duplicate-main",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Document should not have more than one main landmark (https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=axeAPI)",
+      "context": "<main class=\"site-content\" id=\"main-content\" tabindex=\"-1\">\n      \n\n<div class=\"chapter-la...</main>",
+      "selector": "#main-content",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the document has at most one main landmark",
+        "impact": "moderate",
+        "needsFurtherReview": false,
+        "help": "Document should not have more than one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-no-duplicate-main?application=axeAPI"
+      }
+    },
+    {
+      "code": "landmark-unique",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination (https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=axeAPI)",
+      "context": "<main class=\"site-content\" id=\"main-content\" tabindex=\"-1\">\n      \n\n<div class=\"chapter-la...</main>",
+      "selector": "#main-content",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure landmarks are unique",
+        "impact": "moderate",
+        "needsFurtherReview": false,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-in-text-block",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must be distinguishable without relying on color (https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=axeAPI)",
+      "context": "<a href=\"https://doi.org/10.5281/zenodo.20547797\">10.5281/zenodo.20547797</a>",
+      "selector": "#introduction > p:nth-child(5) > a",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "impact": "serious",
+        "needsFurtherReview": false,
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-in-text-block",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must be distinguishable without relying on color (https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=axeAPI)",
+      "context": "<a href=\"https://sites.google.com/uah.edu/geo-ai-working-group/home\">Geospatial-Artificial Intellige...</a>",
+      "selector": "#background-and-motivation > p:nth-child(3) > a:nth-child(2)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "impact": "serious",
+        "needsFurtherReview": false,
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-in-text-block",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must be distinguishable without relying on color (https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=axeAPI)",
+      "context": "<a href=\"https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/sar-handbook\">SAR Handbook</a>",
+      "selector": "#background-and-motivation > p:nth-child(3) > a:nth-child(3)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "impact": "serious",
+        "needsFurtherReview": false,
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-in-text-block",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must be distinguishable without relying on color (https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=axeAPI)",
+      "context": "<a href=\"https://www.eefabook.org/\">Google Earth Engine Book</a>",
+      "selector": "#background-and-motivation > p:nth-child(3) > a:nth-child(4)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "impact": "serious",
+        "needsFurtherReview": false,
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI)",
+      "context": "<a href=\"https://orcid.org/0000-0001-9489-9392\"><img src=\"https://orcid.org/sit...</a>",
+      "selector": "#introduction > p:nth-child(4) > a:nth-child(2)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure links have discernible text",
+        "impact": "serious",
+        "needsFurtherReview": false,
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI)",
+      "context": "<a href=\"https://orcid.org/0000-0001-6169-8236\"><img src=\"https://orcid.org/sit...</a>",
+      "selector": "#introduction > p:nth-child(4) > a:nth-child(5)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure links have discernible text",
+        "impact": "serious",
+        "needsFurtherReview": false,
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI)",
+      "context": "<a href=\"https://orcid.org/0000-0001-9999-1219\"><img src=\"https://orcid.org/sit...</a>",
+      "selector": "#introduction > p:nth-child(4) > a:nth-child(8)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure links have discernible text",
+        "impact": "serious",
+        "needsFurtherReview": false,
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI)",
+      "context": "<a href=\"https://orcid.org/0000-0001-9489-9392\"><img src=\"https://orcid.org/sit...</a>",
+      "selector": "#about-the-editors > p:nth-child(3) > a",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure links have discernible text",
+        "impact": "serious",
+        "needsFurtherReview": false,
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI)",
+      "context": "<a href=\"https://orcid.org/0000-0001-6169-8236\"><img src=\"https://orcid.org/sit...</a>",
+      "selector": "#about-the-editors > p:nth-child(6) > a",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure links have discernible text",
+        "impact": "serious",
+        "needsFurtherReview": false,
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI)",
+      "context": "<a href=\"https://orcid.org/0000-0001-9999-1219\"><img src=\"https://orcid.org/sit...</a>",
+      "selector": "#about-the-editors > p:nth-child(9) > a",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure links have discernible text",
+        "impact": "serious",
+        "needsFurtherReview": false,
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=axeAPI"
+      }
+    },
+    {
+      "code": "color-contrast",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+      "context": "<button class=\"chapter-toc__toggle\" aria-label=\"Toggle subsections\" aria-expanded=\"false\">▸</button>",
+      "selector": "#chapterTocList > li:nth-child(2) > div > button",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "impact": "serious",
+        "needsFurtherReview": true,
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+      }
+    },
+    {
+      "code": "color-contrast",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+      "context": "<button class=\"chapter-toc__toggle\" aria-label=\"Toggle subsections\" aria-expanded=\"false\">▸</button>",
+      "selector": "#chapterTocList > li:nth-child(3) > div > button",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "impact": "serious",
+        "needsFurtherReview": true,
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "page": "404",
+  "url": "/nonexistent-page/",
+  "fullUrl": "http://127.0.0.1:8080/nonexistent-page/",
+  "runner": "axe",
+  "documentTitle": "Page not found at /nonexistent-page/",
+  "issues": []
+}

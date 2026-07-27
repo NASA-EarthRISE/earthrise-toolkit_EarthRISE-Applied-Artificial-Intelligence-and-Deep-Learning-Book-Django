@@ -619,3 +619,42 @@ label {
   clip: rect(0,0,0,0);
   border: 0;
 }
+
+/* Skip navigation link (WCAG 2.4.1) */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 10px 18px;
+  background: var(--color-dark);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 9999;
+  border-radius: 0 0 var(--radius) 0;
+  transition: top 0.1s;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Links in body content must be distinguishable without color (WCAG 1.4.1) */
+.site-content a:not([class]),
+.site-content .notebook-content a,
+.notebook-content a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+/* Exclude navigation/UI links that are already visually distinct */
+.site-content a.chapter-nav__item,
+.site-content a.chapter-toc__link,
+.site-content a.sidebar-link,
+.site-content a.btn,
+.notebook-content a.chapter-nav__item,
+.notebook-content a.chapter-toc__link {
+  text-decoration: none;
+}

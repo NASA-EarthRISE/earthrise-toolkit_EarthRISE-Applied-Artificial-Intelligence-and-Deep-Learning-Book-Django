@@ -178,6 +178,25 @@ class Command(BaseCommand):
         if not content:
             return None  # Unrecognised structure → fall back to nbconvert
 
+        # ── 1a. Neutralise landmark semantics on the root element ─────────
+        # If Quarto used <main> as the content wrapper, inserting it inside
+        # Django's own <main> creates a duplicate main landmark (WCAG 4.1.2).
+        # Change to <div> so the page has exactly one <main>.
+        if content.name == 'main':
+            content.name = 'div'
+
+        # ── 1b. Neutralise the title-block <header> landmark ─────────────
+        # <header id="title-block-header"> inside <main> creates a nested
+        # header landmark that axe flags.  Convert to <div>.
+        title_block_header = content.find('header', id='title-block-header')
+        if title_block_header:
+            title_block_header.name = 'div'
+        # Also convert any remaining <header>/<footer> inside content that
+        # would create unexpected landmark regions.
+        for tag_name in ('header', 'footer'):
+            for el in content.find_all(tag_name):
+                el.name = 'div'
+
         # ── 2. Remove duplicate chapter title ────────────────────────────
         # Django's chapter.html template already displays the chapter title.
         title_div = content.find('div', class_='quarto-title')
@@ -245,6 +264,21 @@ class Command(BaseCommand):
                 if slug:
                     heading['id'] = slug
 
+        # ── 7a. Remove duplicate IDs (section vs heading) ────────────────
+        # Quarto wraps every section in <section id="same-id"> AND puts the
+        # same id on the heading inside.  Remove it from the <section> so
+        # each id appears only once on the page (WCAG 4.1.1 / F77).
+        for section in content.find_all('section'):
+            section_id = section.get('id')
+            if not section_id:
+                continue
+            # If a child heading already carries this id, drop it from the section
+            duplicate_heading = section.find(
+                ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'], id=section_id
+            )
+            if duplicate_heading:
+                del section['id']
+
         # ── 8. Fix YouTube iframes ─────────────────────────────────────────
         # Switch to privacy-enhanced mode, add referrerpolicy, fill title.
         for iframe in content.find_all('iframe'):
@@ -259,9 +293,81 @@ class Command(BaseCommand):
                 allow = iframe.get('allow', '')
                 if 'web-share' not in allow:
                     iframe['allow'] = (allow + '; web-share').lstrip('; ')
-                # Fill empty title so the iframe is not anonymous to the player
-                if not iframe.get('title', '').strip():
-                    iframe['title'] = 'Embedded video'
+            # All iframes must have a title for screen readers (WCAG 4.1.2)
+            if not iframe.get('title', '').strip():
+                iframe['title'] = 'Embedded video'
+
+        # ── 9. Fix empty anchor elements (line-number anchors from nbconvert)
+        # Quarto/nbconvert generates <a href="#cb1-1"></a> for code line numbers.
+        # These have no text content and confuse screen readers (WCAG 2.4.4).
+        # Mark them as aria-hidden and remove from tab order.
+        for a in content.find_all('a', href=True):
+            if not a.get_text(strip=True) and not a.find('img'):
+                a['aria-hidden'] = 'true'
+                a['tabindex'] = '-1'
+
+        # ── 10. Fix images missing alt text ──────────────────────────────
+        # Author photos and ORCID icons in Quarto-generated HTML lack alt.
+        _author_alts = {
+            'Tim_img':    'Tim Dye',
+            'Biplov_img': 'Biplov Bhandari',
+            'David_img':  'David Lagomasino',
+            'Lena_river': 'Lena River delta',
+        }
+        for img in content.find_all('img'):
+            # Skip images that already have an alt attribute (even empty "")
+            if img.get('alt') is not None:
+                continue
+            src = img.get('src', '')
+            # ORCID badge icons — either URL-based or base64 data URIs
+            # (Quarto embeds them inline as data:image/png; parent <a> has
+            #  class="quarto-title-author-orcid" or href matching orcid.org)
+            parent_a = img.find_parent('a')
+            parent_href = parent_a.get('href', '') if parent_a else ''
+            parent_class = ' '.join(parent_a.get('class', [])) if parent_a else ''
+            is_orcid_icon = (
+                ('orcid.org' in src and 'orcid_16x16' in src)
+                or 'quarto-title-author-orcid' in parent_class
+                or 'orcid.org/0000' in parent_href
+            )
+            if is_orcid_icon:
+                img['alt'] = 'ORCID iD'
+            # Book cover
+            elif 'Book_Cover' in src:
+                img['alt'] = 'Applied Artificial Intelligence and Deep Learning Book cover'
+            else:
+                # Named author/asset images
+                matched = False
+                for key, name in _author_alts.items():
+                    if key in src:
+                        img['alt'] = f'Photo of {name}'
+                        matched = True
+                        break
+                if not matched:
+                    # Treat remaining unlabelled inline images as decorative
+                    img['alt'] = ''
+
+        # ── 11. Fix ORCID links that contain only an image (no text) ──────
+        # The image-only link has no accessible name unless the img has alt.
+        # The above step (10) gives the img alt="ORCID iD"; also add
+        # aria-label to the link itself for screen readers that read links
+        # by link text rather than img alt (WCAG 2.4.4 / 4.1.2).
+        for a in content.find_all('a', href=True):
+            href = a.get('href', '')
+            if 'orcid.org/0000' not in href:
+                continue
+            # Only patch links that have no text content (image-only links)
+            if not a.get_text(strip=True) and not a.get('aria-label'):
+                a['aria-label'] = 'ORCID author profile (opens in new tab)'
+
+        # ── 12. Make scrollable code blocks keyboard-accessible ───────────
+        # WCAG 2.1 SC 2.1.1: scrollable content must be keyboard reachable.
+        # <pre> elements in Quarto code blocks have overflow-x:auto (from
+        # the div.sourceCode container) and can overflow horizontally.
+        # Adding tabindex="0" lets keyboard users focus and scroll them.
+        for pre in content.find_all('pre'):
+            if pre.get('tabindex') is None:
+                pre['tabindex'] = '0'
 
         return str(content)
 
