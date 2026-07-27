@@ -1,0 +1,269 @@
+{
+  "page": "404",
+  "url": "/nonexistent-page/",
+  "fullUrl": "http://127.0.0.1:8080/nonexistent-page/",
+  "runner": "htmlcs",
+  "documentTitle": "Page not found at /nonexistent-page/",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.2",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the title element describes the document.",
+      "context": "<title>Page not found at /nonexistent-...</title>",
+      "selector": "html > head > title",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.DataTable",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "This table appears to be a data table. If it is meant to instead be a layout table, ensure there are no th elements, and no summary or caption.",
+      "context": "<table class=\"meta\">\n      <tbody><tr>\n        <th ...</table>",
+      "selector": "#summary > table",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H39.3.NoCaption",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "If this table is a data table, consider using a caption element to the table element to identify this table.",
+      "context": "<table class=\"meta\">\n      <tbody><tr>\n        <th ...</table>",
+      "selector": "#summary > table",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_2.G57",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_3.G96",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Where instructions are provided for understanding the content, do not rely on sensory characteristics alone (such as shape, size or location) to describe objects.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_4.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_1.G14,G182",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that any information conveyed using colour alone is also available in text, or through other visual cues.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_4.G142",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that text can be resized without assistive technology up to 200 percent without loss of content or functionality.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_10.C32,C31,C33,C38,SCR34,G206",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:     Vertical scrolling content at a width equivalent to 320 CSS pixels;     Horizontal scrolling content at a height equivalent to 256 CSS pixels;     Except for parts of the content which require two-dimensional layout for usage or meaning.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_11.G195,G207,G18,G145,G174,F78",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):     User Interface Components: Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;     Graphical Objects: Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_12.C36,C35",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that no loss of content or functionality occurs by setting all of the following and by changing no other style property:              Line height (line spacing) to at least 1.5 times the font size;         Spacing following paragraphs to at least 2 times the font size;         Letter spacing (tracking) to at least 0.12 times the font size;         Word spacing to at least 0.16 times the font size.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_13.F95",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:              Dismissable: A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content;         Hoverable: If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;         Persistent: The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_1.2_1_4.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that if a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:              Turn off: A mechanism is available to turn the shortcut off;         Remap: A mechanism is available to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc);         Active only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.     ",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_2.2_2_2.SCR33,SCR22,G187,G152,G186,G191",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "If any part of the content moves, scrolls or blinks for more than 5 seconds, or auto-updates, check that there is a mechanism available to pause, stop, or hide the content.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_3.2_3_1.G19,G176",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that no component of the content flashes more than three times in any 1-second period, or that the size of any flashing area is sufficiently small.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124,H69",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_5.G125,G64,G63,G161,G126,G185",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "If this Web page is not part of a linear process, check that there is more than one way of locating this Web page within a set of Web pages.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_6.G130,G131",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that headings and labels describe topic or purpose.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_5.2_5_1.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that all functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_5.2_5_2.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that for functionality that can be operated using a single pointer, at least one of the following is true:         No Down-Event: The down-event of the pointer is not used to execute any part of the function;         Abort or Undo: Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion;         Up Reversal: The up-event reverses any outcome of the preceding down-event;         Essential: Completing the function on the down-event is essential.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_5.2_5_3.F96",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_5.2_5_4.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:              Supported Interface: The motion is used to operate functionality through an accessibility supported interface;         Essential: The motion is essential for the function and doing so would invalidate the activity.     ",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_1.3_1_2.H58",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Ensure that any change in language is marked using the lang and/or xml:lang attribute on an element, as appropriate.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_3.G61",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that navigational mechanisms that are repeated on multiple Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_4.G197",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_3.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

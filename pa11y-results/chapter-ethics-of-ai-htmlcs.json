@@ -1,0 +1,729 @@
+{
+  "page": "chapter-ethics-of-ai",
+  "url": "/chapter/ethics-of-ai/",
+  "fullUrl": "http://127.0.0.1:8080/chapter/ethics-of-ai/",
+  "runner": "htmlcs",
+  "documentTitle": "12. Ethics of AI — EarthRISE",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.2",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the title element describes the document.",
+      "context": "<title>12. Ethics of AI — EarthRISE</title>",
+      "selector": "html > head > title",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that a change of context does not occur when this input field receives focus.",
+      "context": "<button class=\"sidebar-toggle\" id=\"sidebarToggle\" aria-label=\"Open navigation\" aria-expanded=\"false\" aria-controls=\"siteSidebar\">\n      <span></span><span></spa...</button>",
+      "selector": "#sidebarToggle",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/\" class=\"site-header__logo\">\n      <img src=\"/static/images...</a>",
+      "selector": "html > body > div:nth-child(1) > header > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G94.Image",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Ensure that the img element's alt text serves the same purpose and presents the same information as the image.",
+      "context": "<img src=\"/static/images/nasa-logo.svg\" alt=\"EarthRISE\" width=\"60\" height=\"50.58\">",
+      "selector": "html > body > div:nth-child(1) > header > a > img",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.",
+      "context": "<img src=\"/static/images/nasa-logo.svg\" alt=\"EarthRISE\" width=\"60\" height=\"50.58\">",
+      "selector": "html > body > div:nth-child(1) > header > a > img",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://github.com/NASA-EarthRISE/EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book\" target=\"_blank\" rel=\"noopener noreferrer\">\n        <!-- GitHub icon -->\n ...</a>",
+      "selector": "html > body > div:nth-child(1) > header > nav > a:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"https://github.com/NASA-EarthRISE/EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book\" target=\"_blank\" rel=\"noopener noreferrer\">\n        <!-- GitHub icon -->\n ...</a>",
+      "selector": "html > body > div:nth-child(1) > header > nav > a:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://doi.org/10.5281/zenodo.20547797\" target=\"_blank\" rel=\"noopener noreferrer\">\n        DOI\n      </a>",
+      "selector": "html > body > div:nth-child(1) > header > nav > a:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"https://doi.org/10.5281/zenodo.20547797\" target=\"_blank\" rel=\"noopener noreferrer\">\n        DOI\n      </a>",
+      "selector": "html > body > div:nth-child(1) > header > nav > a:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/\" class=\"sidebar-link sidebar-link--intro sidebar-link--standalone\">\n        Introduction\n      </a>",
+      "selector": "#siteSidebar > a:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/data-preparation/\" class=\"sidebar-link sidebar-link--standalone\">\n            1. Data Preparatio...</a>",
+      "selector": "#siteSidebar > a:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/crop-mapping/\" class=\"sidebar-link\">\n                  2. Crop Mapp...</a>",
+      "selector": "#sidebar-part-semantic-segmentation > li:nth-child(1) > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/selective-logging-detection/\" class=\"sidebar-link\">\n                  3. Selective...</a>",
+      "selector": "#sidebar-part-semantic-segmentation > li:nth-child(2) > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/clay-deforestation-segmentation/\" class=\"sidebar-link\">\n                  4. Clay Defo...</a>",
+      "selector": "#sidebar-part-semantic-segmentation > li:nth-child(3) > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/object-detection/\" class=\"sidebar-link sidebar-link--standalone\">\n            5. Object Detectio...</a>",
+      "selector": "#siteSidebar > a:nth-child(4)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/soybean-yield-prediction/\" class=\"sidebar-link\">\n                  6. Soybean Y...</a>",
+      "selector": "#sidebar-part-time-series > li > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/active-fire-detection/\" class=\"sidebar-link sidebar-link--standalone\">\n            7. Active Fire Det...</a>",
+      "selector": "#siteSidebar > a:nth-child(6)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/transfer-learning/\" class=\"sidebar-link sidebar-link--standalone\">\n            8. Transfer Learni...</a>",
+      "selector": "#siteSidebar > a:nth-child(7)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/fusion/\" class=\"sidebar-link sidebar-link--standalone\">\n            9. Fusion\n        ...</a>",
+      "selector": "#siteSidebar > a:nth-child(8)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/downscaling/\" class=\"sidebar-link sidebar-link--standalone\">\n            10. Downscaling\n  ...</a>",
+      "selector": "#siteSidebar > a:nth-child(9)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/evaluating-foundation-models/\" class=\"sidebar-link\">\n                  11. Evaluati...</a>",
+      "selector": "#sidebar-part-future-deep-learning > li > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"/chapter/ethics-of-ai/\" class=\"sidebar-link sidebar-link--standalone active\">\n            12. Ethics of AI\n ...</a>",
+      "selector": "#siteSidebar > a:nth-child(11)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/ethics-of-ai/\" class=\"sidebar-link sidebar-link--standalone active\">\n            12. Ethics of AI\n ...</a>",
+      "selector": "#siteSidebar > a:nth-child(11)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/conclusions/\" class=\"sidebar-link sidebar-link--standalone\">\n            13. Conclusions\n  ...</a>",
+      "selector": "#siteSidebar > a:nth-child(12)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H42",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Heading markup should be used if this content is intended as a heading.",
+      "context": "<p><em>This chapter is under devel...</p>",
+      "selector": "#quarto-document-content > p",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/evaluating-foundation-models/\" class=\"chapter-nav__item chapter-nav__item--prev\">\n        <span class=\"chapter-n...</a>",
+      "selector": "#main-content > div > div > nav > a:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"/chapter/conclusions/\" class=\"chapter-nav__item chapter-nav__item--next\">\n        <span class=\"chapter-n...</a>",
+      "selector": "#main-content > div > div > nav > a:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<p>\n      <a href=\"https://creativ...</p>",
+      "selector": "html > body > div:nth-child(1) > footer > p",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H48",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "If this element contains a navigation section, it is recommended that it be marked up as a list.",
+      "context": "<p>\n      <a href=\"https://creativ...</p>",
+      "selector": "html > body > div:nth-child(1) > footer > p",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>",
+      "selector": "html > body > div:nth-child(1) > footer > p > a:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>",
+      "selector": "html > body > div:nth-child(1) > footer > p > a:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Alpha",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element's text or background contains transparency. Ensure the contrast ratio between the text and background are at least 4.5:1.",
+      "context": "<a href=\"https://doi.org/10.5281/zenodo.20547797\" target=\"_blank\" rel=\"noopener\">DOI 10.5281/zenodo.20547797</a>",
+      "selector": "html > body > div:nth-child(1) > footer > p > a:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the link text combined with programmatically determined link context identifies the purpose of the link.",
+      "context": "<a href=\"https://doi.org/10.5281/zenodo.20547797\" target=\"_blank\" rel=\"noopener\">DOI 10.5281/zenodo.20547797</a>",
+      "selector": "html > body > div:nth-child(1) > footer > p > a:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_10.C32,C31,C33,C38,SCR34,G206",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+      "context": "<button class=\"chat-fab\" id=\"chatFab\" aria-label=\"Open Book Assistant\" title=\"Ask the Book Assistant\">\n    <svg width=\"21\" height=\"21...</button>",
+      "selector": "#chatFab",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that a change of context does not occur when this input field receives focus.",
+      "context": "<button class=\"chat-fab\" id=\"chatFab\" aria-label=\"Open Book Assistant\" title=\"Ask the Book Assistant\">\n    <svg width=\"21\" height=\"21...</button>",
+      "selector": "#chatFab",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_10.C32,C31,C33,C38,SCR34,G206",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element has \"position: fixed\". This may require scrolling in two dimensions, which is considered a failure of this Success Criterion.",
+      "context": "<div class=\"chat-window hidden\" id=\"chatWindow\" data-size=\"small\">\n\n    <!-- Header -->\n    <div ...</div>",
+      "selector": "#chatWindow",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that a change of context does not occur when this input field receives focus.",
+      "context": "<button class=\"chat-hbtn\" id=\"chatExpandBtn\" title=\"Expand\" style=\"visibility: visible;\">\n                <svg id=\"chatE...</button>",
+      "selector": "#chatExpandBtn",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that a change of context does not occur when this input field receives focus.",
+      "context": "<button class=\"chat-hbtn\" id=\"chatFsBtn\" title=\"Fullscreen\">\n                <svg id=\"chatF...</button>",
+      "selector": "#chatFsBtn",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that a change of context does not occur when this input field receives focus.",
+      "context": "<button class=\"chat-hbtn\" id=\"chatNewBtn\" title=\"New chat\">\n                <svg width=\"14...</button>",
+      "selector": "#chatNewBtn",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that a change of context does not occur when this input field receives focus.",
+      "context": "<button class=\"chat-hbtn\" id=\"chatCloseBtn\" title=\"Close\">\n                <svg width=\"14...</button>",
+      "selector": "#chatCloseBtn",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Textarea.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This textarea element does not have a name available to an accessibility API. Valid names are: label element, title , aria-label , aria-labelledby .",
+      "context": "<textarea id=\"chatInput\" placeholder=\"Ask about the book…\" rows=\"1\"></textarea>",
+      "selector": "#chatInput",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+      "context": "<textarea id=\"chatInput\" placeholder=\"Ask about the book…\" rows=\"1\"></textarea>",
+      "selector": "#chatInput",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_5.H98",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.",
+      "context": "<textarea id=\"chatInput\" placeholder=\"Ask about the book…\" rows=\"1\"></textarea>",
+      "selector": "#chatInput",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_5.H98",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "This element does not have an autocomplete attribute. If this field collects information about the user, consider adding one to comply with this Success Criterion.",
+      "context": "<textarea id=\"chatInput\" placeholder=\"Ask about the book…\" rows=\"1\"></textarea>",
+      "selector": "#chatInput",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that a change of context does not occur when this input field receives focus.",
+      "context": "<textarea id=\"chatInput\" placeholder=\"Ask about the book…\" rows=\"1\"></textarea>",
+      "selector": "#chatInput",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_1.G107",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that a change of context does not occur when this input field receives focus.",
+      "context": "<button id=\"chatSend\">\n            <svg width=\"13\" he...</button>",
+      "selector": "#chatSend",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_2.G57",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_3.G96",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Where instructions are provided for understanding the content, do not rely on sensory characteristics alone (such as shape, size or location) to describe objects.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_4.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_1.G14,G182",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that any information conveyed using colour alone is also available in text, or through other visual cues.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_4.G142",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that text can be resized without assistive technology up to 200 percent without loss of content or functionality.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_5.G140,C22,C30.AALevel",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "If the technologies being used can achieve the visual presentation, check that text is used to convey information rather than images of text, except when the image of text is essential to the information being conveyed, or can be visually customised to the user's requirements.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_10.C32,C31,C33,C38,SCR34,G206",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:     Vertical scrolling content at a width equivalent to 320 CSS pixels;     Horizontal scrolling content at a height equivalent to 256 CSS pixels;     Except for parts of the content which require two-dimensional layout for usage or meaning.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_11.G195,G207,G18,G145,G174,F78",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that the visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):     User Interface Components: Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;     Graphical Objects: Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_12.C36,C35",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that no loss of content or functionality occurs by setting all of the following and by changing no other style property:              Line height (line spacing) to at least 1.5 times the font size;         Spacing following paragraphs to at least 2 times the font size;         Letter spacing (tracking) to at least 0.12 times the font size;         Word spacing to at least 0.16 times the font size.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_13.F95",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:              Dismissable: A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content;         Hoverable: If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;         Persistent: The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_1.2_1_4.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that if a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:              Turn off: A mechanism is available to turn the shortcut off;         Remap: A mechanism is available to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc);         Active only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.     ",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_2.2_2_2.SCR33,SCR22,G187,G152,G186,G191",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "If any part of the content moves, scrolls or blinks for more than 5 seconds, or auto-updates, check that there is a mechanism available to pause, stop, or hide the content.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_3.2_3_1.G19,G176",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that no component of the content flashes more than three times in any 1-second period, or that the size of any flashing area is sufficiently small.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124,H69",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_3.H4.2",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "If tabindex is used, check that the tab order specified by the tabindex attributes follows relationships in the content.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_5.G125,G64,G63,G161,G126,G185",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "If this Web page is not part of a linear process, check that there is more than one way of locating this Web page within a set of Web pages.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_6.G130,G131",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that headings and labels describe topic or purpose.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_4.2_4_7.G149,G165,G195,C15,SCR31",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that there is at least one mode of operation where the keyboard focus indicator can be visually located on user interface controls.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_5.2_5_1.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that all functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_5.2_5_2.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that for functionality that can be operated using a single pointer, at least one of the following is true:         No Down-Event: The down-event of the pointer is not used to execute any part of the function;         Abort or Undo: Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion;         Up Reversal: The up-event reverses any outcome of the preceding down-event;         Essential: Completing the function on the down-event is essential.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_5.2_5_3.F96",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle2.Guideline2_5.2_5_4.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:              Supported Interface: The motion is used to operate functionality through an accessibility supported interface;         Essential: The motion is essential for the function and doing so would invalidate the activity.     ",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_1.3_1_2.H58",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Ensure that any change in language is marked using the lang and/or xml:lang attribute on an element, as appropriate.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_3.G61",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that navigational mechanisms that are repeated on multiple Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle3.Guideline3_2.3_2_4.G197",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_3.",
+      "type": "notice",
+      "typeCode": 3,
+      "message": "Check that status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.",
+      "context": null,
+      "selector": "",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    }
+  ]
+}

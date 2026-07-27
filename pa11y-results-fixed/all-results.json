@@ -1,0 +1,2389 @@
+[
+  {
+    "slug": "home",
+    "url": "http://127.0.0.1:8080/",
+    "runner": "htmlcs",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "home",
+    "url": "http://127.0.0.1:8080/",
+    "runner": "axe",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "chapter-data-preparation",
+    "url": "http://127.0.0.1:8080/chapter/data-preparation/",
+    "runner": "htmlcs",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "chapter-data-preparation",
+    "url": "http://127.0.0.1:8080/chapter/data-preparation/",
+    "runner": "axe",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "chapter-crop-mapping",
+    "url": "http://127.0.0.1:8080/chapter/crop-mapping/",
+    "runner": "htmlcs",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "chapter-crop-mapping",
+    "url": "http://127.0.0.1:8080/chapter/crop-mapping/",
+    "runner": "axe",
+    "issueCount": 143,
+    "issues": [
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"/content/drive/MyDrive/Colab N...</span>",
+        "selector": "#cb11-2 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"co\"># @param {type:\"string\"}</span>",
+        "selector": "#cb11-2 > span:nth-child(4)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"co\"># @param {type:\"string\"}</span>",
+        "selector": "#cb11-3 > span:nth-child(4)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb16-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb16-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb19-5\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb19-5",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">1</span>",
+        "selector": "#cb19-5 > span:nth-child(10)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb24-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb24-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"ss\">/trained-model\"</span>",
+        "selector": "#cb24-1 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb31-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb31-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb34-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb34-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">1</span>",
+        "selector": "#cb34-1 > span:nth-child(10)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb37-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb37-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"ss\">/trained-model\"</span>",
+        "selector": "#cb37-1 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb46-7\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb46-7",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"projects/servir-sco-assets/ass...</span>",
+        "selector": "#cb46-7 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb47-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb47-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"projects/servir-ee/assets/dl-b...</span>",
+        "selector": "#cb47-1 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb47-4\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb47-4",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">4</span>",
+        "selector": "#cb47-4 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"palette\"</span>",
+        "selector": "#cb47-4 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"FFFF00\"</span>",
+        "selector": "#cb47-4 > span:nth-child(9)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"FFC0CB\"</span>",
+        "selector": "#cb47-4 > span:nth-child(10)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"267300\"</span>",
+        "selector": "#cb47-4 > span:nth-child(11)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"E60000\"</span>",
+        "selector": "#cb47-4 > span:nth-child(12)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"005CE6\"</span>",
+        "selector": "#cb47-4 > span:nth-child(13)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"UNET_RGBN\"</span>",
+        "selector": "#cb47-4 > span:nth-child(14)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb48-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb48-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"prediction\"</span>",
+        "selector": "#cb48-1 > span:nth-child(14)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb48-2\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb48-2",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"267300\"</span>",
+        "selector": "#cb48-2 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"UNET_RGBN_remapped\"</span>",
+        "selector": "#cb48-2 > span:nth-child(9)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb49-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb49-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"projects/servir-ee/assets/dl-b...</span>",
+        "selector": "#cb49-1 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb49-2\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb49-2",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"projects/servir-ee/assets/dl-b...</span>",
+        "selector": "#cb49-2 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb49-3\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb49-3",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb51-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb51-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"remapped\"</span>",
+        "selector": "#cb51-1 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb51-4\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb51-4",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">1</span>",
+        "selector": "#cb51-4 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">0</span>",
+        "selector": "#cb51-4 > span:nth-child(4)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb51-5\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb51-5",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">0</span>",
+        "selector": "#cb51-5 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">1</span>",
+        "selector": "#cb51-5 > span:nth-child(4)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb52-4\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb52-4",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb52-5\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb52-5",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb53-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb53-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"cropland_etc\"</span>",
+        "selector": "#cb53-1 > span:nth-child(5)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"urban\"</span>",
+        "selector": "#cb53-1 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"forest\"</span>",
+        "selector": "#cb53-1 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"rice\"</span>",
+        "selector": "#cb53-1 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb53-2\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb53-2",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"cropland_prob\"</span>",
+        "selector": "#cb53-2 > span:nth-child(4)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"urban_prob\"</span>",
+        "selector": "#cb53-2 > span:nth-child(5)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"forest_prob\"</span>",
+        "selector": "#cb53-2 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"rice_prob\"</span>",
+        "selector": "#cb53-2 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb53-3\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb53-3",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">10</span>",
+        "selector": "#cb53-3 > span:nth-child(4)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"va\">True</span>",
+        "selector": "#cb53-3 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb55-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb55-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"projects/servir-ee/assets/dl-b...</span>",
+        "selector": "#cb55-1 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb55-4\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb55-4",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">4</span>",
+        "selector": "#cb55-4 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"palette\"</span>",
+        "selector": "#cb55-4 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"FFFF00\"</span>",
+        "selector": "#cb55-4 > span:nth-child(9)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"FFC0CB\"</span>",
+        "selector": "#cb55-4 > span:nth-child(10)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"267300\"</span>",
+        "selector": "#cb55-4 > span:nth-child(11)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"E60000\"</span>",
+        "selector": "#cb55-4 > span:nth-child(12)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"005CE6\"</span>",
+        "selector": "#cb55-4 > span:nth-child(13)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"DNN_RGBN\"</span>",
+        "selector": "#cb55-4 > span:nth-child(14)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb56-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb56-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"prediction\"</span>",
+        "selector": "#cb56-1 > span:nth-child(14)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb56-2\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb56-2",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"267300\"</span>",
+        "selector": "#cb56-2 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"DNN_RGBN_remapped\"</span>",
+        "selector": "#cb56-2 > span:nth-child(9)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb58-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb58-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"remapped\"</span>",
+        "selector": "#cb58-1 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb58-4\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb58-4",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">0</span>",
+        "selector": "#cb58-4 > span:nth-child(4)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb58-5\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb58-5",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">0</span>",
+        "selector": "#cb58-5 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">1</span>",
+        "selector": "#cb58-5 > span:nth-child(4)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb59-4\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb59-4",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb59-5\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb59-5",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb60-1\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb60-1",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"cropland_etc\"</span>",
+        "selector": "#cb60-1 > span:nth-child(5)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"urban\"</span>",
+        "selector": "#cb60-1 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"forest\"</span>",
+        "selector": "#cb60-1 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"rice\"</span>",
+        "selector": "#cb60-1 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb60-2\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb60-2",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"cropland_prob\"</span>",
+        "selector": "#cb60-2 > span:nth-child(4)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"urban_prob\"</span>",
+        "selector": "#cb60-2 > span:nth-child(5)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"forest_prob\"</span>",
+        "selector": "#cb60-2 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"rice_prob\"</span>",
+        "selector": "#cb60-2 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb60-3\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb60-3",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">10</span>",
+        "selector": "#cb60-3 > span:nth-child(4)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"va\">True</span>",
+        "selector": "#cb60-3 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb64-19\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb64-19",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">0</span>",
+        "selector": "#cb64-19 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"o\"</span>",
+        "selector": "#cb64-19 > span:nth-child(9)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"ss\">f\"U-Net validate </span>",
+        "selector": "#cb64-19 > span:nth-child(12)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb64-20\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb64-20",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">1</span>",
+        "selector": "#cb64-20 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"o\"</span>",
+        "selector": "#cb64-20 > span:nth-child(10)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"ss\">f\"DNN validate </span>",
+        "selector": "#cb64-20 > span:nth-child(12)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb64-21\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb64-21",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb64-26\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb64-26",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb64-28\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb64-28",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">0</span>",
+        "selector": "#cb64-28 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"o\"</span>",
+        "selector": "#cb64-28 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"ss\">f\"U-Net train </span>",
+        "selector": "#cb64-28 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb64-29\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb64-29",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">1</span>",
+        "selector": "#cb64-29 > span:nth-child(3)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"o\"</span>",
+        "selector": "#cb64-29 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"ss\">f\"DNN train </span>",
+        "selector": "#cb64-29 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb64-30\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb64-30",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb64-35\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb64-35",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"co\"># plt.savefig(\"metrics_plot_mod...</span>",
+        "selector": "#cb64-40 > span",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb65-17\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb65-17",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">0</span>",
+        "selector": "#cb65-17 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"o\"</span>",
+        "selector": "#cb65-17 > span:nth-child(9)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"ss\">f\"U-Net validate </span>",
+        "selector": "#cb65-17 > span:nth-child(12)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb65-18\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb65-18",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">1</span>",
+        "selector": "#cb65-18 > span:nth-child(7)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"o\"</span>",
+        "selector": "#cb65-18 > span:nth-child(10)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"ss\">f\"DNN validate </span>",
+        "selector": "#cb65-18 > span:nth-child(12)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb65-20\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb65-20",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"o\"</span>",
+        "selector": "#cb65-20 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"ss\">f\"U-Net train </span>",
+        "selector": "#cb65-20 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb65-21\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb65-21",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"o\"</span>",
+        "selector": "#cb65-21 > span:nth-child(6)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"ss\">f\"DNN train </span>",
+        "selector": "#cb65-21 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"co\"># plt.savefig(\"metrics_plot_mod...</span>",
+        "selector": "#cb65-32 > span",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span id=\"cb66-14\"><a aria-hidden=\"true\" href=\"#cb...</span>",
+        "selector": "#cb66-14",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"properties\"</span>",
+        "selector": "#cb66-14 > span:nth-child(8)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"forest_prob\"</span>",
+        "selector": "#cb66-14 > span:nth-child(9)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"properties\"</span>",
+        "selector": "#cb66-14 > span:nth-child(11)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"others_prob\"</span>",
+        "selector": "#cb66-14 > span:nth-child(12)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"properties\"</span>",
+        "selector": "#cb66-14 > span:nth-child(14)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"st\">\"urban_prob\"</span>",
+        "selector": "#cb66-14 > span:nth-child(15)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"dv\">5</span>",
+        "selector": "#cb66-14 > span:nth-child(16)",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "color-contrast",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+        "context": "<span class=\"co\"># dnn_other_prob = round(dnn_fe...</span>",
+        "selector": "#cb66-22 > span",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "impact": "serious",
+          "needsFurtherReview": true,
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+        }
+      },
+      {
+        "code": "frame-tested",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Frames should be tested with axe-core (https://dequeuniversity.com/rules/axe/4.11/frame-tested?application=axeAPI)",
+        "context": "<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" data-external=\"1\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube-nocooki...",
+        "selector": "#quarto-document-content > div:nth-child(4) > iframe",
+        "runner": "axe",
+        "runnerExtras": {
+          "description": "Ensure <iframe> and <frame> elements contain the axe-core script",
+          "impact": "critical",
+          "needsFurtherReview": true,
+          "help": "Frames should be tested with axe-core",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-tested?application=axeAPI"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "chapter-object-detection",
+    "url": "http://127.0.0.1:8080/chapter/object-detection/",
+    "runner": "htmlcs",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "chapter-object-detection",
+    "url": "http://127.0.0.1:8080/chapter/object-detection/",
+    "runner": "axe",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "chapter-ethics-of-ai",
+    "url": "http://127.0.0.1:8080/chapter/ethics-of-ai/",
+    "runner": "htmlcs",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "chapter-ethics-of-ai",
+    "url": "http://127.0.0.1:8080/chapter/ethics-of-ai/",
+    "runner": "axe",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "chapter-conclusions",
+    "url": "http://127.0.0.1:8080/chapter/conclusions/",
+    "runner": "htmlcs",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "chapter-conclusions",
+    "url": "http://127.0.0.1:8080/chapter/conclusions/",
+    "runner": "axe",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "404",
+    "url": "http://127.0.0.1:8080/chapter/nonexistent-404-test/",
+    "runner": "htmlcs",
+    "issueCount": 0,
+    "issues": []
+  },
+  {
+    "slug": "404",
+    "url": "http://127.0.0.1:8080/chapter/nonexistent-404-test/",
+    "runner": "axe",
+    "issueCount": 0,
+    "issues": []
+  }
+]

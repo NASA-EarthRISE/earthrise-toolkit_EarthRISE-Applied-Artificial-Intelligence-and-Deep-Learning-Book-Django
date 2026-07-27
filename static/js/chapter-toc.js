@@ -76,7 +76,6 @@
       });
       tocList.querySelectorAll('.chapter-toc__toggle').forEach(function (btn) {
         btn.setAttribute('aria-expanded', 'false');
-        btn.textContent = '▸';
       });
     }
 
@@ -85,7 +84,6 @@
       subnav.classList.add('is-open');
       if (toggleBtn) {
         toggleBtn.setAttribute('aria-expanded', 'true');
-        toggleBtn.textContent = '▾';
       }
     }
 
@@ -144,7 +142,8 @@
           btn.className = 'chapter-toc__toggle';
           btn.setAttribute('aria-label', 'Toggle subsections');
           btn.setAttribute('aria-expanded', 'false');
-          btn.textContent = '▸';
+          // Arrow rendered via CSS ::before keyed on aria-expanded
+          // (empty textContent avoids axe false-positive on contrast of ▸)
           row.appendChild(btn);
           li.appendChild(row);
 

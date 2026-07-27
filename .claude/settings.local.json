@@ -15,7 +15,21 @@
       "Bash(cd:*)",
       "Bash(tree:*)",
       "WebFetch(domain:127.0.0.1)",
-      "Bash(del \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\check_imports.py\")"
+      "Bash(del \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\check_imports.py\")",
+      "Bash(node --version:*)",
+      "Bash(npm --version)",
+      "Bash(pa11y:*)",
+      "Bash(timeout:*)",
+      "Bash(ping:*)",
+      "Bash(npx puppeteer browsers install chrome)",
+      "Bash(node -e:*)",
+      "Bash(node run-pa11y.js:*)",
+      "Bash(node analyze-results.js:*)",
+      "Bash(node analyze-notices.js:*)",
+      "Bash(del \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\run-pa11y.js\" \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\analyze-results.js\" \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\analyze-notices.js\" \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\pa11y-config.json\")",
+      "Bash(where:*)",
+      "Bash(node:*)",
+      "Bash(del \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\run-pa11y-fixed.js\" \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\analyze-contrast.js\" \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\check-home-axe.js\" \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\check-remaining.js\" \"C:\\\\Users\\\\washmall\\\\Documents\\\\websites\\\\EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book-django\\\\summarize-results.js\")"
     ]
   }
 }
