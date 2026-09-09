@@ -435,5 +435,5 @@ Both `home.html` and `chapter.html` use depth-3.
 
 ## License and Distribution
 
-EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book is distributed by EarthRISE under the terms of the MIT License. See
+EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book is distributed by EarthRISE under the terms of the GPLv3 License. See
 [LICENSE](https://github.com/NASA-EarthRISE/earthrise-toolkit_EarthRISE-Applied-Artificial-Intelligence-and-Deep-Learning-Book/blob/main/LICENSE) in this directory for more information.
